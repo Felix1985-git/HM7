@@ -33,8 +33,8 @@ public final class Person {
             return false;
         }
         Person person = (Person) obj;
-        return firstName == person.firstName &&
-                lastName == person.lastName &&
+        return person.firstName.equals(firstName) &&
+                person.lastName.equals(lastName) &&
                 gender == person.gender;
     }
 
